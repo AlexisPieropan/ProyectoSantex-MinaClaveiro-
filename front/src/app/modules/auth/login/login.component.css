@@ -4,19 +4,31 @@
     justify-content: center;
     background-color: #242424;
     background-color: beige;
-    border-radius: 20px;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    box-shadow: 20px 20px 40px black;
+    box-shadow: -20px -20px 40px black;
+
     
 }
 .divImagen{
     background-image: url('https://www.cba.gov.ar/wp-content/uploads/2019/11/La-Toma-8.jpg');
     background-size: cover;
-    min-height: 90vh;
-    border-radius: 20px;
+    min-height: 80vh;
+    border-top-left-radius: 150px;
     clip-path: polygon(0 0, 100% 20%, 80% 100%, 0% 100%);
     width: 60%;
+    
 }
 
 .loginForm{
+    box-shadow: 20px 20px 40px black;
     width: 40%;
+    background-color: darkorange;
     backdrop-filter: blur(50%);
+    border-bottom-right-radius: 150px;
+    display: inherit;
+    justify-content: inherit;
+    align-items:center;
+
 }

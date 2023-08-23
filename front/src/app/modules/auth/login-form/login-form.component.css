@@ -1,0 +1,26 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  margin:1rem auto;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#bottomRaised{
+
+}
+#bottomRaised:hover{
+  background-color: #a75ac9;
+  color: black;
+}
+#bottomFlat{
+  color: #7b1fa2;
+  background-color: darkorange;
+}
+#bottomFlat:hover{
+  color: black;
+  background-color: #a75ac9;
+  transition:ease-in 0.4s;
+}
