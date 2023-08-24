@@ -30,5 +30,29 @@
     display: inherit;
     justify-content: inherit;
     align-items:center;
+}
 
+.loginForm app-login-form {
+    width: 250px;
+    min-width: 130px;
+}
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+        background-color:unset;
+
+    }
+    .divImagen{
+        clip-path: none;
+        width: 100%;
+        height: 50%;
+    }
+    .loginForm{
+        width: 100%;
+        height: 50%;
+    }
+    .loginForm app-login-form {
+        width: 180px;
+    }
 }
