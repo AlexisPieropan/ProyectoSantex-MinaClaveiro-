@@ -19,4 +19,13 @@ export class LoginFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showRecover = false;
+  hideLogin = true
+
+  toggle = (() => {
+  this.showRecover = !this.showRecover
+  this.hideLogin = !this.hideLogin}
+  )
 }
+
+

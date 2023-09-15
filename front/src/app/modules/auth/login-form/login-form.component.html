@@ -1,21 +1,25 @@
 <!-- <p>login-form works!</p> -->
 <div class="contenedor">
 
-    <mat-form-field>
+    <mat-form-field *ngIf="hideLogin">
       <input matInput type="text" placeholder="Usuario">
     </mat-form-field>
   
-    <mat-form-field>
+    <mat-form-field *ngIf="hideLogin">
         <input matInput type="password" placeholder="Contraseña">
     </mat-form-field>
-    <br>
-    <button mat-raised-button id='bottomRaised' color="primary" >Ingresar</button>
 
-    <!-- <button mat-raised-button color="red">Basic</button>  -->
+    <mat-form-field id="recover" *ngIf="showRecover">
+      <input matInput type="text" placeholder="Email">
+    </mat-form-field>
+    <p *ngIf="showRecover">Ingrese su mail para recuperar su contraseña </p>
     <br>
-    <button mat-flat-button id='bottomFlat' href="https://www.google.com/" target="_blank">Recuperar contraseña</button>
     
+    <button mat-raised-button id='bottomRaised' color="primary" *ngIf="hideLogin">Ingresar</button>
+    <button mat-raised-button id='bottomRaised' color="primary" *ngIf="showRecover">Enviar</button>
+    <br>
+
+    <button mat-flat-button id='bottomFlat' (click)="toggle()" *ngIf="hideLogin">Recuperar contraseña</button>
+    <button mat-flat-button id='bottomFlat' (click)="toggle()" *ngIf="showRecover">Volver a login</button>
+
 </div>
-
-
-
